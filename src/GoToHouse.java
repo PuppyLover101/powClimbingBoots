@@ -13,7 +13,7 @@ public class GoToHouse extends Task {
     @Override
     public boolean activate() {
         return !Constants.HOUSE_AREA.contains(Players.local())
-                && Constants.HOUSE_ENTRANCE_TILE.distanceTo(Players.local()) < 10;
+                && Constants.HOUSE_ENTRANCE_TILE.distanceTo(Players.local()) < 5;
     }
 
     @Override

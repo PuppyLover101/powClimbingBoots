@@ -12,7 +12,7 @@ public class GoToTenzing extends Task {
 
     @Override
     public boolean activate() {
-        return Constants.HOUSE_ENTRANCE_TILE.distanceTo(Players.local()) >= 10
+        return Constants.HOUSE_ENTRANCE_TILE.distanceTo(Players.local()) >= 5
                 && !Inventory.isFull()
                 && Inventory.stream().name("Coins").first().valid()
                 && !Main.restockDueling
